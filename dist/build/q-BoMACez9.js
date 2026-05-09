@@ -1,0 +1,1 @@
+import{_ as i}from"./q-DoNi8vyY.js";import{D as o,q as t}from"./q-WlAwSxA_.js";const n=o(t(()=>i(()=>import("./q-Dp4VPj7O.js"),[]),"s_GgD4TmM1pw4")),a={title:"Hello World | Qwik + Alpine + Tailwind",meta:[{name:"description",content:"Hello World app built with Qwik, Alpine.js, and Tailwind CSS"}]};export{n as default,a as head};
