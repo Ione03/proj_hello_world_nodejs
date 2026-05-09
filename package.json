@@ -13,7 +13,8 @@
     "@builder.io/qwik": "^1.12.1",
     "@builder.io/qwik-city": "^1.12.1",
     "alpinejs": "^3.14.8",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "undici": ">=6.0.0"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.12.1",
