@@ -1,0 +1,26 @@
+{
+  "name": "qwik-alpine-hello-world",
+  "version": "1.0.0",
+  "description": "Hello World app with Qwik, Alpine.js, and Tailwind CSS",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode ssr",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@builder.io/qwik": "^1.12.1",
+    "@builder.io/qwik-city": "^1.12.1",
+    "alpinejs": "^3.14.8"
+  },
+  "devDependencies": {
+    "@builder.io/qwik-city": "^1.12.1",
+    "@types/node": "^22.10.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "@builder.io/qwik": "^1.12.1"
+  }
+}
