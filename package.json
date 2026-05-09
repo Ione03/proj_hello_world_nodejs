@@ -5,22 +5,25 @@
   "type": "module",
   "scripts": {
     "dev": "vite --mode ssr",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && vite build --ssr src/entry.express.tsx --outDir server",
+    "preview": "vite preview",
+    "start": "node server/entry.express.js"
   },
   "dependencies": {
     "@builder.io/qwik": "^1.12.1",
     "@builder.io/qwik-city": "^1.12.1",
-    "alpinejs": "^3.14.8"
+    "alpinejs": "^3.14.8",
+    "express": "^5.2.1"
   },
   "devDependencies": {
+    "@builder.io/qwik": "^1.12.1",
     "@builder.io/qwik-city": "^1.12.1",
+    "@types/express": "^5.0.6",
     "@types/node": "^22.10.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2",
-    "vite": "^5.4.11",
-    "@builder.io/qwik": "^1.12.1"
+    "vite": "^5.4.11"
   }
 }
