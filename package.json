@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Hello World app with Qwik, Alpine.js, and Tailwind CSS",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "./node_modules/.bin/vite --mode ssr",
     "build": "./node_modules/.bin/vite build && ./node_modules/.bin/vite build --ssr src/entry.express.tsx --outDir server",
