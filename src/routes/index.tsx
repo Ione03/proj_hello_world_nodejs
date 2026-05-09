@@ -13,7 +13,7 @@ export default component$(() => {
         </div>
 
         <h1 class="text-6xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-400 to-sky-400 bg-clip-text text-transparent">
-          Hello, World!
+          Hello, Iwan!
         </h1>
 
         <p class="text-lg text-slate-400 max-w-md mx-auto">

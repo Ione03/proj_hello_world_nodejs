@@ -1,0 +1,61 @@
+Proj hello world success run on server:
+
+compile project di local dengan versi node yg sama dengan server (20.20.2): 
+> nvm install 20.20.2 (jika belum pernah diinstall)
+> nvm use 20.20.2
+> node -v
+
+
+di /public_html/blog1
+.htaccess:
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/authboxw/test_hello_world"
+PassengerBaseURI "/"
+PassengerNodejs "/home/authboxw/nodevenv/test_hello_world/20/bin/node"
+PassengerAppType node
+PassengerStartupFile app.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+
+
+setting node.js apps
+Node.js Version: 20.20.2
+Application Mode: Production
+Application Root: test_hello_world
+url: blog1.authbox.web.id
+application startup file: app.js
+
+package.json:
+{
+  "name": "qwik-alpine-hello-world",
+  "version": "1.0.0",
+  "description": "Hello World app with Qwik, Alpine.js, and Tailwind CSS",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/vite --mode ssr",
+    "build": "./node_modules/.bin/vite build && ./node_modules/.bin/vite build --ssr src/entry.express.tsx --outDir server",
+    "preview": "./node_modules/.bin/vite preview",
+    "start": "node server/entry.express.js"
+  },
+  "dependencies": {
+    "@builder.io/qwik": "^1.12.1",
+    "@builder.io/qwik-city": "^1.12.1",
+    "alpinejs": "^3.14.8",
+    "express": "^5.2.1",
+    "undici": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "^1.12.1",
+    "@builder.io/qwik-city": "^1.12.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}
